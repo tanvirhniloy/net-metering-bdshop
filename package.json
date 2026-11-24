@@ -1,0 +1,33 @@
+{
+  "name": "net-metering-bdshop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Net Metering by BDSHOP - searchable directory of SREDA-approved solar equipment for Bangladesh's Net Metering Program",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "import-data": "node scripts/import-data.mjs",
+    "verify-data": "node scripts/verify-data.mjs"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "geist": "^1.9.2",
+    "lucide-react": "^1.79.0",
+    "next": "^16.4.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^5.6.0"
+  },
+  "engines": { "node": ">=20.9.0" }
+}

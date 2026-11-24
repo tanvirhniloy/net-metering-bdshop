@@ -1,0 +1,6 @@
+{
+  "_help": "Optional. Only needed if automatic column detection picks the wrong column. Use the exact header text from the Excel file. Remove the leading underscore from a category key to activate it.",
+  "_solar-modules": { "brand": "Manufacturer", "model": "Model No", "capacity": "Rated Power (Wp)", "tableColumns": ["Module Technology", "Efficiency (%)"] },
+  "_single-phase-inverters": {},
+  "_three-phase-inverters": {}
+}

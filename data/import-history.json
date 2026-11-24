@@ -1,0 +1,43 @@
+[
+  {
+    "at": "2026-11-24T09:50:43.814Z",
+    "categories": {
+      "solar-modules": {
+        "file": "solar-modules.xlsx",
+        "records": 213,
+        "added": 213,
+        "updated": 0,
+        "removed": 0,
+        "identicalRowsKept": 13,
+        "noteRows": 0,
+        "warnings": [
+          "Brand written in different ways (not merged): \"JA Solar\", \"JA SOLAR\"",
+          "Brand written in different ways (not merged): \"IpVisola\", \"Ipvisola\""
+        ]
+      },
+      "single-phase-inverters": {
+        "file": "single-phase-inverters.xlsx",
+        "records": 43,
+        "added": 43,
+        "updated": 0,
+        "removed": 0,
+        "identicalRowsKept": 0,
+        "noteRows": 0,
+        "warnings": []
+      },
+      "three-phase-inverters": {
+        "file": "three-phase-inverters.xlsx",
+        "records": 238,
+        "added": 238,
+        "updated": 0,
+        "removed": 0,
+        "identicalRowsKept": 11,
+        "noteRows": 0,
+        "warnings": [
+          "Brand written in different ways (not merged): \"INVT\", \"invt\"",
+          "Brand written in different ways (not merged): \"SOFAR\", \"Sofar\""
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-padding-top: 5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    html { scroll-behavior: smooth; }
+  }
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+  }
+  :focus-visible {
+    outline: 2px solid #1d5fe0;
+    outline-offset: 2px;
+  }
+  h1, h2, h3 { @apply text-navy; }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex h-10 items-center justify-center gap-2 whitespace-nowrap rounded-md border px-4 text-sm font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .bg-grad { background-image: linear-gradient(135deg, #1546c0 0%, #1d6fe8 55%, #0a83c8 100%); }
+  .bg-grad-dark { background-image: linear-gradient(135deg, #0b2a5b 0%, #1546c0 60%, #0a83c8 100%); }
+  .bg-grad-soft { background-image: linear-gradient(180deg, #e6f1ff 0%, #ffffff 100%); }
+  .bg-grad-band { background-image: linear-gradient(135deg, #e6f1ff 0%, #d9f1ff 100%); }
+  .bg-grad-strip { background-image: linear-gradient(90deg, #1546c0, #0ea5e9 60%, #ffb020); }
+  .btn-primary { @apply border-transparent bg-grad text-white hover:brightness-110; }
+  .btn-outline { @apply border-line bg-white text-ink hover:bg-tint; }
+  .field {
+    @apply h-10 w-full rounded-md border border-slate-300 bg-white px-3 text-sm text-ink placeholder:text-slate-500;
+  }
+  .label { @apply mb-1 block text-xs font-medium text-muted; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade { animation: none !important; }
+}
