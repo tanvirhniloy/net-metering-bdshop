@@ -3,15 +3,15 @@
  * To replace the banner, overwrite public/banner.svg or change `bannerSrc` (keep a 1200 x 160 image).
  */
 export const siteConfig = {
-  name: "Net Metering by BDSHOP",
+  name: "Net Metering",
   shortName: "Net Metering",
   brand: "BDSHOP",
-  title: "Net Metering by BDSHOP | SREDA Approved Solar Equipment",
+  title: "SREDA Approved Solar Panel, Inverter List for Net Metering",
   description:
-    "Explore SREDA-approved solar panels, single-phase inverters, and three-phase inverters for Bangladesh's Net Metering Program. Search and compare solar equipment with Net Metering by BDSHOP.",
+    "Explore SREDA-approved solar panels, single-phase inverters, and three-phase inverters for Bangladesh's Net Metering Program. Search and compare solar equipment with Net Metering Bangladesh.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
   bannerSrc: "/banner.png",
-  bannerAlt: "Solar panels and sun illustration banner for Net Metering by BDSHOP",
+  bannerAlt: "Solar panels and sun illustration banner for Net Metering Bangladesh",
   links: {
     // Placeholders: update these to the final destinations.
     bdshop: "https://bdshop.com",

@@ -6,7 +6,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
-  title: { default: siteConfig.title, template: "%s | Net Metering by BDSHOP" },
+  title: { default: siteConfig.title, template: "%s | Net Metering Bangladesh" },
   description: siteConfig.description,
   applicationName: siteConfig.name,
   alternates: { canonical: "/" },

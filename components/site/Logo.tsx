@@ -1,17 +1,15 @@
+import Image from "next/image";
 import Link from "next/link";
 
-export function Logo({ light = false }: { light?: boolean }) {
+/** Uses public/netMetering.png. Replace that file to change the logo (set width/height to the PNG's pixel size). */
+export function Logo({ onDark = false }: { onDark?: boolean }) {
   return (
-    <Link href="/" className="flex items-center gap-2.5" aria-label="BDSHOP Net Metering - home">
-      <span
-        aria-hidden
-        className={`flex h-8 w-8 items-center justify-center rounded text-sm font-bold ${light ? "bg-white text-navy" : "bg-grad text-white"}`}
-      >
-        B
-      </span>
-      <span className={`text-base font-bold tracking-tight ${light ? "text-white" : "text-navy"}`}>BDSHOP</span>
-      <span aria-hidden className={`h-5 w-px ${light ? "bg-white/30" : "bg-line"}`} />
-      <span className={`text-sm font-medium ${light ? "text-white/80" : "text-muted"}`}>Net Metering</span>
+    <Link
+      href="/"
+      aria-label="Net Metering - home"
+      className={onDark ? "inline-block rounded bg-white px-3 py-2" : "inline-block"}
+    >
+      <Image src="/netMetering.png" alt="Net Metering" width={984} height={192} priority className="h-9 w-auto" />
     </Link>
   );
 }

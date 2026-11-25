@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { DirectoryPage } from "@/components/DirectoryPage";
 import { CATEGORIES, CATEGORY_BY_ID, isCategoryId } from "@/lib/categories";
+import { siteConfig } from "@/lib/site-config";
 
 export const dynamicParams = false;
 
@@ -14,8 +15,8 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
   if (!isCategoryId(category)) return {};
   const c = CATEGORY_BY_ID[category];
   return {
-    title: `${c.label} | SREDA Approved Solar Equipment`,
-    description: c.description + " Search and compare with Net Metering by BDSHOP.",
+    title: { absolute: siteConfig.title },
+    description: c.description + " Search and compare with Net Metering Bangladesh.",
     alternates: { canonical: `/${c.slug}` },
     openGraph: { url: `/${c.slug}` },
   };
